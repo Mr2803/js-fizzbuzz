@@ -26,6 +26,7 @@ function start(){
     } else{
       //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
         document.getElementById('stampaCicloFor').innerHTML += "<span>" + i  + "</span>" +  " " ;
+        document.getElementById("disable1").disabled = true;
         console.log(i)//debug
     }
     document.getElementById('cicloForAfter').style.display = "none";
@@ -56,6 +57,7 @@ function start2(){
     } else{
       //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
         document.getElementById('stampaCicloWhile').innerHTML += j + " ";
+        document.getElementById("disable2").disabled = true;
         console.log(j)//debug
     }
   //VIA DI USCITA DAL CICLO
@@ -91,7 +93,9 @@ function start3(){
     } else{
       //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
       document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + k +  "</span>" + " ";
+      document.getElementById("disable3").disabled = true;
         console.log(k)//debug
+
     }
   //VIA DI USCITA DAL CICLO
     k++;
