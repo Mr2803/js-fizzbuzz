@@ -16,7 +16,7 @@ for(i=1; i<=100; i++){
     console.log("Fizz")
     // per i multipli di 5 stampi Buzz
   } else if(i % 5 == 0 ){
-    document.getElementById('stampaCicloFor').innerHTML +=  "<span>" + "Buzz"  + "</span>" + " " ;
+    document.getElementById('stampaCicloFor').innerHTML +=  "<span style=color:orange;>" + "Buzz"  + "</span>" + " " ;
     console.log("Buzz")
   } else{
     //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
