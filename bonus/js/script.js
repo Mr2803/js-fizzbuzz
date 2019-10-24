@@ -8,19 +8,19 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 for(i=1; i<=100; i++){
   //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
   if(i % 3 == 0 && i % 5 == 0){
-    document.getElementById('stampaCicloFor').innerHTML +=  "FizzBuzz" + " " ;
+    document.getElementById('stampaCicloFor').innerHTML +=  "<span style=color:green;>" + "FizzBuzz"  + "</span>" + " " ;
     console.log("FizzBuzz")
     //per i multipli di 3 stampi “Fizz” al posto del numero
   } else if(i % 3 == 0){
-    document.getElementById('stampaCicloFor').innerHTML +=   "Fizz" + " " ;
+    document.getElementById('stampaCicloFor').innerHTML +=  "<span style=color:blue;>" + "Fizz"  + "</span>" + " " ;
     console.log("Fizz")
     // per i multipli di 5 stampi Buzz
   } else if(i % 5 == 0 ){
-    document.getElementById('stampaCicloFor').innerHTML +=  "Buzz" + " ";
+    document.getElementById('stampaCicloFor').innerHTML +=  "<span>" + "Buzz"  + "</span>" + " " ;
     console.log("Buzz")
   } else{
     //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
-      document.getElementById('stampaCicloFor').innerHTML +=   i + " ";
+      document.getElementById('stampaCicloFor').innerHTML += "<span>" + i  + "</span>" +  " " ;
       console.log(i)//debug
   }
 }
