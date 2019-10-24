@@ -6,9 +6,18 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 
 
 for(i=1; i<=100; i++){
-  console.log(i)//debug
+
   //per i multipli di 3 stampi “Fizz” al posto del numero
   if(i % 3 == 0){
-    console.log("fizz")
+    console.log("Fizz")
+    //e per i multipli di 5 stampi Buzz
+  } else if(i % 5 == 0){
+    console.log("Buzz")
+    //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
+  }else if(i % 5 == 0 && i % 3 == 0){
+    console.log("FizzBuzz")
+  }else{
+      console.log(i)//debug
   }
+
 }
