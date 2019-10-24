@@ -7,16 +7,17 @@ Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.*/
 
 for(i=1; i<=100; i++){
 
-  //per i multipli di 3 stampi “Fizz” al posto del numero
-  if(i % 3 == 0){
-    console.log("Fizz")
-    //e per i multipli di 5 stampi Buzz
-  } else if(i % 5 == 0){
-    console.log("Buzz")
-    //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
-  }else if(i % 5 == 0 && i % 3 == 0){
+ //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
+  if(i % 3 == 0 && i % 5 == 0){
     console.log("FizzBuzz")
-  }else{
+    //per i multipli di 3 stampi “Fizz” al posto del numero
+  } else if(i % 3 == 0){
+    console.log("Fizz")
+    // per i multipli di 5 stampi Buzz
+  } else if(i % 5 == 0 ){
+    console.log("Buzz")
+  } else{
+    //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
       console.log(i)//debug
   }
 
