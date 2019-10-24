@@ -31,7 +31,6 @@ h2{
 
 #stampaCicloDoWhile span{
   border : 1px solid black;
-  padding : 5px;
 }
 
 #stampaCicloDoWhile span:nth-child(5n):hover{
