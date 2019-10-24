@@ -5,20 +5,26 @@
 }
 
 body{
-  background: url(../img/eatsleep.jpg);
-  background-position: top;
+  background: url(../img/tapet_2019-10-24_17-42-15_691_2960x2960.png);
+  background-attachment: fixed;
+  background-position: center;
 }
 
 .debug{
- border : 1px solid black;
+ border : 1px black solid;
  box-shadow: 5px 5px 10px 2px #333333;
+ border-radius: 10px;
+}
+
+h1{
+  text-transform: uppercase;
 }
 
 h2{
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
-	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	background: linear-gradient(to right,#69D2E7  0%,#E79351 50%, #000 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -27,5 +33,11 @@ h2{
 #stampaCicloWhile,
 #stampaCicloWhileDo{
   font-size: 1.3rem;
-  color:white;
+  color:black;
+  font-weight: bold;
+}
+
+footer{
+  background: rgba(26, 25, 22, 0.8);
+  border-radius: 10px;
 }
