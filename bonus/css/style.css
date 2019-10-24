@@ -24,14 +24,35 @@ h2{
   font-weight: bold;
   font-size: 3rem;
   text-transform: uppercase;
-	background: linear-gradient(to right,#69D2E7  0%,#E79351 50%, #000 100%);
+	background: linear-gradient(to right,#00bde3  0%,#E79351 50%, #000 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
+#stampaCicloDoWhile span{
+  border : 1px solid black;
+  padding : 5px;
+}
+
+#stampaCicloDoWhile span:nth-child(5n):hover{
+  background:green;
+  color:white;
+}
+#stampaCicloDoWhile span:nth-child(3n):hover{
+  background:blue;
+  color:white;
+}
+
+#stampaCicloDoWhile span:nth-child(15n):hover{
+ background:red;
+ color:white;
+}
+
+
+
 #stampaCicloFor,
 #stampaCicloWhile,
-#stampaCicloWhileDo{
+#stampaCicloDoWhile{
   font-size: 1.3rem;
   color:black;
   font-weight: bold;

@@ -55,19 +55,19 @@ var k = 1;
 do{
   //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
   if(k % 3 == 0 && k % 5 == 0){
-    document.getElementById('stampaCicloDoWhile').innerHTML +=  "FizzBuzz" + " ";
+    document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + "FizzBuzz"  + "</span>" +" ";
     console.log("FizzBuzz")
     //per i multipli di 3 stampi “Fizz” al posto del numero
   } else if(k % 3 == 0){
-    document.getElementById('stampaCicloDoWhile').innerHTML +=  "Fizz" + " ";
+    document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Fizz"+ "</span>" + " ";
     console.log("Fizz")
     // per i multipli di 5 stampi Buzz
   } else if(k % 5 == 0 ){
-    document.getElementById('stampaCicloDoWhile').innerHTML +=  "Buzz" + " ";
+    document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Buzz" + "</span>"+ " ";
     console.log("Buzz")
   } else{
     //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
-    document.getElementById('stampaCicloDoWhile').innerHTML += k + " ";
+    document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + k +  "</span>" + " ";
       console.log(k)//debug
   }
 //VIA DI USCITA DAL CICLO
