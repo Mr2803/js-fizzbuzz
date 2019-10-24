@@ -4,18 +4,28 @@
   box-sizing: border-box;
 }
 
+body{
+  background: url(../img/eatsleep.jpg);
+  background-position: top;
+}
+
 .debug{
  border : 1px solid black;
  box-shadow: 5px 5px 10px 2px #333333;
 }
 
 h2{
+  font-weight: bold;
   font-size: 3rem;
+  text-transform: uppercase;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #stampaCicloFor,
 #stampaCicloWhile,
 #stampaCicloWhileDo{
-  font-weight: bold;
   font-size: 1.3rem;
+  color:white;
 }
