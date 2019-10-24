@@ -9,10 +9,6 @@ for(var num=1; num<=100; num++){
   document.getElementById('cicloForAfter').innerHTML += "<span>" + num  + "</span>" +  " " ;
 }
 
-
-
-
-
 function start(){
   for(var i=1; i<=100; i++){
     //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
@@ -71,27 +67,35 @@ document.getElementById('cicloWhileAfter').style.display = "none";
 
 
 // NOTE: PROVA CON CICLO WHILE DO
-
-var k = 1;
+var num3 =1
 do{
-  //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
-  if(k % 3 == 0 && k % 5 == 0){
-    document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + "FizzBuzz"  + "</span>" +" ";
-    console.log("FizzBuzz")
-    //per i multipli di 3 stampi “Fizz” al posto del numero
-  } else if(k % 3 == 0){
-    document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Fizz"+ "</span>" + " ";
-    console.log("Fizz")
-    // per i multipli di 5 stampi Buzz
-  } else if(k % 5 == 0 ){
-    document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Buzz" + "</span>"+ " ";
-    console.log("Buzz")
-  } else{
-    //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
-    document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + k +  "</span>" + " ";
-      console.log(k)//debug
-  }
-//VIA DI USCITA DAL CICLO
-  k++;
+  document.getElementById('cicloDoWhileAfter').innerHTML += "<span>" + num3 +  "</span>" + " ";
+  num3++;
+}while(num3<=100)
 
-}while(k<=100)
+function start3(){
+  var k = 1;
+  do{
+    //Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz(devo inserirla prima perchè se la inserissi dopo js troverebbe gia prima la soluzione e quindi non arriverebbe a questa condizione)
+    if(k % 3 == 0 && k % 5 == 0){
+      document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + "FizzBuzz"  + "</span>" +" ";
+      console.log("FizzBuzz")
+      //per i multipli di 3 stampi “Fizz” al posto del numero
+    } else if(k % 3 == 0){
+      document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Fizz"+ "</span>" + " ";
+      console.log("Fizz")
+      // per i multipli di 5 stampi Buzz
+    } else if(k % 5 == 0 ){
+      document.getElementById('stampaCicloDoWhile').innerHTML +=  "<span>" +"Buzz" + "</span>"+ " ";
+      console.log("Buzz")
+    } else{
+      //devo inserirlo all'interno di un else altrimenti lo stamperebbe in console a prescindere e le scritte non sostituirebbero i numeri ma si porrebbero prima di loro
+      document.getElementById('stampaCicloDoWhile').innerHTML += "<span>" + k +  "</span>" + " ";
+        console.log(k)//debug
+    }
+  //VIA DI USCITA DAL CICLO
+    k++;
+
+  }while(k<=100)
+  document.getElementById('cicloDoWhileAfter').style.display = "none";
+}

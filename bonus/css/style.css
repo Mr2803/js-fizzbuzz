@@ -10,7 +10,7 @@ body{
   background-position: center;
 }
 
-.debug{
+.my_style-col{
  border : 1px black solid;
  box-shadow: 5px 5px 10px 2px #333333;
  border-radius: 10px;
